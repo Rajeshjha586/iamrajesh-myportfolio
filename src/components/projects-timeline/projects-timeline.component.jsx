@@ -4,7 +4,7 @@ import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 // projects
 
 import L_SharingWhiteBoard from "../../assets/img/projects/WhiteBoard.png";
-
+import L_RealTimeChatApp from "../../assets/img/projects/realtimechat.PNG"
 
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
@@ -13,14 +13,12 @@ import Card from "react-bootstrap/Card";
 import L_REACT from "../../assets/img/skills/react.svg";
 import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
 import L_EXPRESS from "../../assets/img/skills/express.svg";
-import L_POSTGRESQL from "../../assets/img/skills/postgresql.svg";
 import L_MONGODB from "../../assets/img/skills/mongodb.svg";
 import Image from "react-bootstrap/Image";
-import L_REDUX from "../../assets/img/skills/redux.svg";
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
 import L_CSS3 from "../../assets/img/skills/css3.svg";
 import L_BOOTSTRAP4 from "../../assets/img/skills/bootstrap-4.svg";
-import L_DJANGO from "../../assets/img/skills/django.svg";
+
 import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 import L_GIT from "../../assets/img/skills/github-api.svg";
 import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
@@ -35,6 +33,150 @@ const TimeLine = () => {
       <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
       <Timeline>
         <Events>
+
+        {/* Project: Realtime Chat App */}
+        <ImageEvent
+            date="15/02/2k20"
+            className="text-center"
+            text="Chat App"
+            src={L_RealTimeChatApp}
+            alt="Chat App"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is Realtime Chat Application, Using React on the front end, with NodeJS + Socket.io web socket library on the back end.
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Group Chat</li>
+                          <li>Cross-platform Messaging</li>
+                          <li>We create Chat Rooms</li>
+                          <li>Quick Response</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HTML5}
+                                alt="HTML 5"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              HTML5
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_CSS3}
+                                alt="CSS 3"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              CSS3
+                            </span>
+                          </li>
+                         
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_NODE_JS}
+                                alt="Node.js"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                               NodeJS
+                            </span>
+                          </li>
+
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_EXPRESS}
+                                alt="Express.js"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                               ExpressJS
+                            </span>
+                          </li>
+
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT}
+                                alt="React.js"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                               ReactJS
+                            </span>
+                          </li>
+                          
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HEROKU}
+                                alt="Heroku"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                                Heroku
+                            </span>
+                          </li>
+
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_GIT}
+                                alt="github"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                                GitHub
+                            </span>
+                          </li>
+
+
+                          
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                    href="https://nifty-lichterman-9bd764.netlify.app/"
+                    target="_blank"
+                  >
+                    SEE LIVE
+                </UrlButton>
+                <UrlButton
+                  href="https://github.com/Rajeshjha586/Realtime_Chat_Application/tree/master/Chat%20App"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                
+              </div>
+            </div>
+          </ImageEvent>
+
  
 
           {/* Project: Sharing White Board */}
@@ -131,7 +273,7 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_Heroku}
+                                src={L_HEROKU}
                                 alt="Heroku"
                                 rounded
                                 className="image-style m-1"

@@ -5,6 +5,8 @@ import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 
 import L_SharingWhiteBoard from "../../assets/img/projects/WhiteBoard.png";
 import L_RealTimeChatApp from "../../assets/img/projects/realtimechat.PNG"
+import L_TaskListApp from "../../assets/img/projects/TaskListApp.PNG"
+import L_CalculatorApp from "../../assets/img/projects/Calculator.PNG"
 
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
@@ -23,6 +25,7 @@ import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 import L_GIT from "../../assets/img/skills/github-api.svg";
 import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
 import L_HEROKU from "../../assets/img/skills/heroku.svg";
+import L_JavaSript from "../../assets/img/skills/javascript.svg";
 
 
 import "./projects-timeline.styles.css";
@@ -33,6 +36,249 @@ const TimeLine = () => {
       <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
       <Timeline>
         <Events>
+        
+        {/* Project: Task List App */}
+        <ImageEvent
+            date="12/04/2k20"
+            className="text-center"
+            text="Calculator App"
+            src={L_CalculatorApp}
+            alt="Calculator App"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> Calculator made with HTML, CSS and JavaScript for simple arithmetic operations.
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Addition</li>
+                          <li>Subtraction</li>
+                          <li>Division</li>
+                          <li>Multiplication</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HTML5}
+                                alt="HTML 5"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              HTML5
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_CSS3}
+                                alt="CSS 3"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              CSS3
+                            </span>
+                          </li>
+
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_BOOTSTRAP4}
+                                alt="Bootstrap"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Bootstrap
+                            </span>
+                          </li>
+
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_JavaSript}
+                                alt="JavaScript"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              JavaScript
+                            </span>
+                          </li>
+                         
+                          
+
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_GIT}
+                                alt="github"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                                GitHub
+                            </span>
+                          </li>
+
+
+                          
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                    href="https://rajeshjha586.github.io/Calculator/"
+                    target="_blank"
+                  >
+                    SEE LIVE
+                </UrlButton>
+                <UrlButton
+                  href="https://github.com/Rajeshjha586/Calculator"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                
+              </div>
+            </div>
+          </ImageEvent>
+
+
+
+        {/* Project: Task List App */}
+        <ImageEvent
+            date="19/03/2k20"
+            className="text-center"
+            text="Task List App"
+            src={L_TaskListApp}
+            alt="Task List App"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is simple Task List App, using HTML5, CSS3, Bootstrap and JavaScript.
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Add Task</li>
+                          <li>Remove Task</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HTML5}
+                                alt="HTML 5"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              HTML5
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_CSS3}
+                                alt="CSS 3"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              CSS3
+                            </span>
+                          </li>
+
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_BOOTSTRAP4}
+                                alt="Bootstrap"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Bootstrap
+                            </span>
+                          </li>
+
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_JavaSript}
+                                alt="JavaScript"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              JavaScript
+                            </span>
+                          </li>
+                         
+                          
+
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_GIT}
+                                alt="github"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                                GitHub
+                            </span>
+                          </li>
+
+
+                          
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                    href="https://rajeshjha586.github.io/Task_List_App/"
+                    target="_blank"
+                  >
+                    SEE LIVE
+                </UrlButton>
+                <UrlButton
+                  href="https://github.com/Rajeshjha586/Task_List_App"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                
+              </div>
+            </div>
+          </ImageEvent>
+        
 
         {/* Project: Realtime Chat App */}
         <ImageEvent
@@ -167,7 +413,7 @@ const TimeLine = () => {
                     SEE LIVE
                 </UrlButton>
                 <UrlButton
-                  href="https://github.com/Rajeshjha586/Realtime_Chat_Application/tree/master/Chat%20App"
+                  href="https://github.com/Rajeshjha586/Realtime_Chat_Application"
                   target="_blank"
                 >
                   SOURCE CODE

@@ -43,6 +43,7 @@ const TitleMessage = () => (
           </span>
         </div>
         <div className="sub">
+          
           <Typewriter
             options={{
               strings: ["Student", "Learner", "Coder", "SelfTaught Developer"],

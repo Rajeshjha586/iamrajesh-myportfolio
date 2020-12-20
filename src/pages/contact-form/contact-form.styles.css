@@ -12,3 +12,7 @@
   background-color: #f83f37;
   color: #ffffff;
 }
+
+.my-style{
+  box-shadow: 0px 5px 10px black;
+}

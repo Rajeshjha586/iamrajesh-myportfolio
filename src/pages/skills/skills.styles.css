@@ -1,5 +1,6 @@
 .focus {
   transition: transform 0.3s;
+  box-shadow: 5px 10px 20px black;
 }
 
 .focus:hover {

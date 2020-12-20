@@ -27,9 +27,11 @@ import TimeLine from "./components/projects-timeline/projects-timeline.component
 //contact-form
 import ContactForm from "./pages/contact-form/contact-form.component";
 
+//Education
+import Education from "./pages/education/education.component";
+
 //FooterPanel
 import FooterPanel from "./components/footer/footer.component";
-
 
 
 import Particles from "react-particles-js";
@@ -80,12 +82,23 @@ const App = () => {
         </Container>
       </div>
 
+
       <Container className="container-box rounded">
         <Slide bottom duration={500}>
           <hr />
           <TimeLine />
         </Slide>
       </Container>
+
+      <div>
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+            <hr />
+
+            <Education />
+          </Fade>
+        </Container>
+      </div>
 
       <Container className="container-box rounded">
         <Fade duration={500}>

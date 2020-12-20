@@ -56,7 +56,7 @@ const Skills = () => {
 
             {/* Other */}
 
-            <Card className="focus mt-2 mb-2">
+            <Card className="focus mt-3 mb-3">
               <Card.Body>
                 <Card.Title className="text-center  card-title">Other</Card.Title>
                 <hr />
